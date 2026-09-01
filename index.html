@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dipika Das | Portfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  background:#f7f5ff;
+  color:#222;
+  line-height:1.6;
+}
+header{
+  background:linear-gradient(135deg,#6c5ce7,#a29bfe);
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+header h1{font-size:45px;margin-bottom:10px}
+header p{font-size:19px}
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#fff;
+  box-shadow:0 2px 10px #ddd;
+  text-align:center;
+  padding:15px;
+}
+nav a{
+  color:#333;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
+}
+nav a:hover{color:#6c5ce7}
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2{
+  text-align:center;
+  color:#6c5ce7;
+  margin-bottom:30px;
+  font-size:32px;
+}
+.card{
+  background:white;
+  padding:25px;
+  margin:15px 0;
+  border-radius:15px;
+  box-shadow:0 5px 20px #ddd;
+}
+.about{text-align:center;font-size:18px}
+.interests,.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+.tag{
+  background:#eeeaff;
+  color:#5b4bc4;
+  padding:12px 20px;
+  border-radius:25px;
+  font-weight:bold;
+}
+.education{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.edu-card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 5px 20px #ddd;
+}
+.edu-card h3{color:#6c5ce7}
+.contact{text-align:center}
+.contact a{
+  color:#6c5ce7;
+  font-weight:bold;
+  text-decoration:none;
+}
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:0;
+  border-radius:25px;
+  background:#6c5ce7;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+}
+button:hover{background:#5142bd}
+@media(max-width:600px){
+  header h1{font-size:35px}
+  nav a{display:inline-block;margin:5px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hi, I'm Dipika Das</h1>
+  <p>BA Student | Web Design Learner | AI Enthusiast</p>
+  <button onclick="showMessage()">Welcome</button>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#interests">Interests</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card about">
+    <p>
+      Hi, I'm <strong>Dipika Das</strong>, a 2nd year BA student at
+      Surya Sen Mahavidyalaya in Siliguri. I enjoy learning new things
+      and exploring new ideas. Recently, I have been learning about
+      web design and Generative AI. My future goal is to develop my
+      skills and build a successful career.
+    </p>
+  </div>
+</section>
+
+<section id="interests">
+  <h2>My Interests</h2>
+  <div class="interests">
+    <div class="tag">💃 Dance</div>
+    <div class="tag">📚 Reading Books</div>
+    <div class="tag">✈️ Travelling</div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="education">
+    <div class="edu-card">
+      <h3>Class 10th</h3>
+      <p>Nasrul Sarta Barshiki Vidyalaya</p>
+    </div>
+    <div class="edu-card">
+      <h3>Class 12th</h3>
+      <p>Nasrul Sarta Barshiki Vidyalaya</p>
+    </div>
+    <div class="edu-card">
+      <h3>College</h3>
+      <p>Surya Sen Mahavidyalaya</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <div class="tag">⚡ Quick Learning</div>
+    <div class="tag">🤝 Teamwork</div>
+    <div class="tag">⏰ Time Management</div>
+    <div class="tag">💬 Communication</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="card contact">
+    <p>📧 Email:
+      <a href="mailto:dipikadas8550@gmail.com">
+        dipikadas8550@gmail.com
+      </a>
+    </p>
+    <p>🐙 GitHub:
+      <a href="https://github.com/" target="_blank">
+        GitHub Profile
+      </a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Dipika Das | My Portfolio</p>
+</footer>
+
+<script>
+function showMessage(){
+  alert("Welcome to Dipika Das's Portfolio! 😊");
+}
+</script>
+
+</body>
+      </html>
